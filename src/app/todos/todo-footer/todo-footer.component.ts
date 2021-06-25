@@ -28,7 +28,6 @@ export class TodoFooterComponent implements OnInit {
   }
 
   changeFilter(filter: variousFilters): void {
-    this.currentFilter = filter;
     this.store.dispatch(setFilter({ filter }));
   }
 
